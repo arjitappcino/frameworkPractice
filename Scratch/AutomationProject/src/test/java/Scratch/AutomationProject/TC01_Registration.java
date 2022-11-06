@@ -1,8 +1,13 @@
 package Scratch.AutomationProject;
 
-import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
@@ -17,15 +22,21 @@ public class TC01_Registration {
 	String driverpath = "C:\\driver\\chromedriver.exe";
 	
 	@BeforeTest
-	public void setup(){
+	public void setup() throws IOException{
 		
 		System.setProperty("webdriver.chrome.driver", driverpath);
 		driver = new ChromeDriver();
 		driver.get("https://dev.automationtesting.in/form");
+	
+		FileInputStream inputStream = new FileInputStream("D:\\github\\AppcinoPractice\\frameworkPractice\\Scratch\\AutomationProject\\UserData.xlsx");
+		 
+		XSSFWorkbook UserDataWB = new XSSFWorkbook(inputStream);
 		
-		 File file =    new File(".//UserData.xlss");
-		 
-		 
+		XSSFSheet sheet = UserDataWB.getSheetAt(0);
+		
+		Row row = sheet.getRow(0);
+		Cell cell = row.getCell(0);
+		
 		
 	}
 	
