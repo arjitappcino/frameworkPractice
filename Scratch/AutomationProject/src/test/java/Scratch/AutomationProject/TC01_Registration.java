@@ -1,6 +1,6 @@
 package Scratch.AutomationProject;
 
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
 
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ public class TC01_Registration {
 	
 	WebDriver driver;
 	RegisterElements objRegister;
-	String driverpath = "C:\\drivers\\chromedriver.exe";
+	String driverpath = "C:\\driver\\chromedriver.exe";
 	
 	@BeforeTest
 	public void setup(){
@@ -23,12 +23,20 @@ public class TC01_Registration {
 		driver = new ChromeDriver();
 		driver.get("https://dev.automationtesting.in/form");
 		
+		 File file =    new File(".//UserData.xlss");
+		 
+		 
+		
 	}
 	
 	@Test
 	public void registerTest() throws FileNotFoundException{
 		objRegister = new RegisterElements(driver);
-		FileInputStream fs = new FileInputStream("D:\\UserData.xlsx");
+		
+		objRegister.setFirstName("abc");
+		objRegister.setLastName("xyz");
+		
+		
 		
 	}
 	
