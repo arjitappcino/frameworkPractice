@@ -29,7 +29,7 @@ public class RegisterElements {
 	@FindAll({@FindBy(xpath = "//label[text()='Gender']/parent::div//input")})
 	public List<WebElement> gender;
 	
-	@FindAll({@FindBy(xpath = "//legend[contains(text(),'Interested')]/parent::fieldset//label")})
+	@FindAll({@FindBy(xpath = "//legend[contains(text(),'Interested')]/parent::fieldset//label//input")})
 	public List<WebElement> interests;
 	
 	@FindBy(xpath="//label[text()='Languages']/parent::div//li")
@@ -65,6 +65,40 @@ public class RegisterElements {
 	
 	public void setPhone(String strPhone){
 		phone.sendKeys(strPhone);
+	}
+	
+	public void setGender(String strGender){
+		switch(strGender){
+			case "Male": 
+				gender.get(1).click();
+				break;
+			case "Female":
+				gender.get(0).click();
+			case "Other":
+				gender.get(2).click();
+		}
+	}
+	
+	public void setInterests(String[] selectedInterest) {
+		for(int i=0;i<selectedInterest.length;i++) {
+			switch(selectedInterest[i]) {
+				case "Automation Testing":
+					interests.get(0).click();
+					break;
+				
+				case "Manual Testing":
+					interests.get(1).click();
+					break;
+					
+				case "Development":
+					interests.get(2).click();
+					break;
+					
+				case "Management":
+					interests.get(3).click();
+					break;
+			}
+		}
 	}
 	
 }
