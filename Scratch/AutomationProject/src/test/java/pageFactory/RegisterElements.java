@@ -2,6 +2,7 @@ package pageFactory;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -32,15 +33,23 @@ public class RegisterElements {
 	@FindAll({@FindBy(xpath = "//legend[contains(text(),'Interested')]/parent::fieldset//label//input")})
 	public List<WebElement> interests;
 	
-	@FindBy(xpath="//label[text()='Languages']/parent::div//li")
-	public List<WebElement> languages;
+	@FindBy(xpath="//label[text()='Languages']/parent::div/div")
+	public WebElement languagesLabel;
 	
-	@FindBy(xpath="//label[text()='Skills']/parent::div//div/select")
-	WebElement skills;
+	@FindBy(xpath="//label[text()='Skills']")
+	WebElement skillsLabel;
 	
-	@FindBy(xpath="//label[contains(text(),'Select Country')]/parent::div//div/select")
-	WebElement selectCountry;
+	@FindBy(xpath="//label[text()='Country']")
+	WebElement countryLabel;
 	
+	@FindBy(name="confirmPassword")
+	WebElement confirmPassword;
+	
+	@FindBy(name="password")
+	WebElement password;
+	
+	
+
 	public RegisterElements(WebDriver driver){
 
         this.driver = driver;
@@ -99,6 +108,22 @@ public class RegisterElements {
 					break;
 			}
 		}
+	}
+	
+	public void setLanguages(String[] selectedLanguages) throws InterruptedException {
+		languagesLabel.click();
+		for(int i = 0;i<selectedLanguages.length;i++) {
+			WebElement select = driver.findElement(By.xpath("//span[text()='"+selectedLanguages[i]+"']"));
+			select.click();
+		}
+		Thread.sleep(2000);
+		confirmPassword.click();
+	}
+	
+	public void setSkill(String strSkill) {
+		skillsLabel.click();
+		driver.findElement(By.xpath("//li[text()='"+strSkill+"']")).click();
+		confirmPassword.click();
 	}
 	
 }
