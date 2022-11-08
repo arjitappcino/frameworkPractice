@@ -5,8 +5,9 @@
     <classes>
       <class name="Scratch.AutomationProject.TC01_Registration">
         <methods>
-          <include name="setup"/>
-          <include name="registerTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="registerTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- Scratch.AutomationProject.TC01_Registration -->
     </classes>

@@ -1,13 +1,13 @@
-package utils;
+package utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class utility {
+public class utils {
 	
 	public WebDriver driver;
-	public utility(WebDriver driver) {
+	public utils(WebDriver driver) {
 		this.driver = driver;
 	}
 	public void scrollTillElementFound(WebElement element) {
