@@ -1,124 +1,40 @@
-package utility;
-
 import java.io.FileInputStream;
 
-import java.io.FileNotFoundException;
-
-import java.io.FileOutputStream;
-
-import java.io.IOException;
-
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-
-import org.apache.poi.xssf.usermodel.XSSFRow;
-
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
 
 public class dataFetch {
 
-	private static XSSFSheet ExcelWSheet;
+	FileInputStream fileInputStream = new FileInputStream("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\UserData.xlsx"); // Excel sheet file location get mentioned
+															// here
+	workbook=new HSSFWorkbook(fileInputStream); // get my workbook
+	worksheet=workbook.getSheet(SheetName);// get my sheet from workbook
+	HSSFRow Row = worksheet.getRow(0); // get my Row which start from 0
 
-	private static XSSFWorkbook ExcelWBook;
+	int RowNum = worksheet.getPhysicalNumberOfRows();// count my number of Rows
+	int ColNum = Row.getLastCellNum(); // get last ColNum
 
-	private static XSSFCell Cell;
+	Object Data[][] = new Object[RowNum - 1][ColNum]; // pass my count data in array
 
-	private static XSSFRow Row;
+	for(
+	int i = 0;i<RowNum-1;i++) // Loop work for Rows
+	{
+		HSSFRow row = worksheet.getRow(i + 1);
 
-	public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {
-
-		String[][] tabArray = null;
-
-		try {
-
-			FileInputStream ExcelFile = new FileInputStream(FilePath);
-
-			// Access the required test data sheet
-
-			ExcelWBook = new XSSFWorkbook(ExcelFile);
-
-			ExcelWSheet = ExcelWBook.getSheet(SheetName);
-
-			int startRow = 1;
-
-			int startCol = 1;
-
-			int ci, cj;
-
-			int totalRows = ExcelWSheet.getLastRowNum();
-
-			// you can write a function as well to get Column count
-
-			int totalCols = 2;
-
-			tabArray = new String[totalRows][totalCols];
-
-			ci = 0;
-
-			for (int i = startRow; i <= totalRows; i++, ci++) {
-
-				cj = 0;
-
-				for (int j = startCol; j <= totalCols; j++, cj++) {
-
-					tabArray[ci][cj] = getCellData(i, j);
-
-					System.out.println(tabArray[ci][cj]);
-
+		for (int j = 0; j < ColNum; j++) // Loop work for colNum
+		{
+			if (row == null)
+				Data[i][j] = "";
+			else {
+				HSSFCell cell = row.getCell(j);
+				if (cell == null)
+					Data[i][j] = ""; // if it get Null value it pass no data
+				else {
+					String value = formatter.formatCellValue(cell);
+					Data[i][j] = value; // This formatter get my all values as string i.e integer, float all type
+										// data value
 				}
-
 			}
-
 		}
-
-		catch (FileNotFoundException e) {
-
-			System.out.println("Could not read the Excel sheet");
-
-			e.printStackTrace();
-
-		}
-
-		catch (IOException e) {
-
-			System.out.println("Could not read the Excel sheet");
-
-			e.printStackTrace();
-
-		}
-
-		return (tabArray);
-
 	}
-
-	public static String getCellData(int RowNum, int ColNum) throws Exception {
-
-			try{
-
-				Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
-
-				int dataType = (int) Cell.getNumericCellValue();
-
-				if  (dataType == 3) {
-
-					return "";
-
-				}else{
-
-					String CellData = Cell.getStringCellValue();
-
-					return CellData;
-
-				}}catch (Exception e){
-
-				System.out.println(e.getMessage());
-
-				throw (e);
-
-				}
-
-	}
-			
 }

@@ -1,18 +1,20 @@
 package Scratch.AutomationProject;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageFactory.RegisterElements;
-import utility.dataFetch;
 import utility.utils;
 
 public class TC01_Registration {
@@ -30,7 +32,6 @@ public class TC01_Registration {
 		driver.manage().window().maximize();
 		driver.get("https://dev.automationtesting.in/form");
 	}
-	
 
 //	  public static Object[][] registerData() {
 //
@@ -46,10 +47,10 @@ public class TC01_Registration {
 //	        };
 //
 //	  }
-	 
-	 
-	@Test(dataProvider = "register")
-	public void registerTest(String firstName, String lastName, String address, String email,String phone, String gender) throws FileNotFoundException, InterruptedException {
+
+	@Test(dataProvider = "registerData")
+	public void registerTest(String firstName, String lastName, String address, String email, String phone,
+			String gender) throws FileNotFoundException, InterruptedException {
 		objRegister = new RegisterElements(driver);
 		objUtility = new utils(driver);
 
@@ -61,7 +62,7 @@ public class TC01_Registration {
 		objRegister.setGender(gender);
 //		String[] selectInterests = { "Automation Testing", "Development" };
 //		objRegister.setInterests(selectInterests);
-		
+
 //		WebElement clrBtn = driver.findElement(By.name("password"));
 //		// objUtility.scrollTillElementFound(conBtn);
 //		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clrBtn);
@@ -69,19 +70,17 @@ public class TC01_Registration {
 //		String[] selectLanguages = { "Arabic", "Filipino" };
 //		objRegister.setLanguages(selectLanguages);
 	}
-	
-	@DataProvider(name = "register")
-    public Object[][] Authentication() throws Exception{
 
-         Object[][] testObjArray = dataFetch.getTableArray("D://ToolsQA//OnlineStore//src//testData//TestData.xlsx","Sheet1");
-
-         return (testObjArray);
-
-		}
-	
 	@AfterMethod
 	public void afterMethod() {
 		driver.close();
+	}
+
+	@DataProvider
+	public Object[][] registerData() throws Exception {
+		System.out.println("hello");
+		return Data;
+
 	}
 
 }

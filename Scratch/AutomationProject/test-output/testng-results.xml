@@ -1,144 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-08T13:00:58 IST" name="Default suite" finished-at="2022-11-08T13:01:30 IST" duration-ms="32278">
+  <suite started-at="2022-11-08T13:59:38 IST" name="Default suite" finished-at="2022-11-08T13:59:39 IST" duration-ms="606">
     <groups>
     </groups>
-    <test started-at="2022-11-08T13:00:58 IST" name="Default test" finished-at="2022-11-08T13:01:30 IST" duration-ms="32278">
+    <test started-at="2022-11-08T13:59:38 IST" name="Default test" finished-at="2022-11-08T13:59:39 IST" duration-ms="606">
       <class name="Scratch.AutomationProject.TC01_Registration">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:00:58 IST" name="beforeMethod" finished-at="2022-11-08T13:01:10 IST" duration-ms="12220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:10 IST" name="registerTest" data-provider="register" finished-at="2022-11-08T13:01:12 IST" duration-ms="1717" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[xyz]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[address ABCXYZ]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[abc@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[9876543210]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:12 IST" name="afterMethod" finished-at="2022-11-08T13:01:12 IST" duration-ms="221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:12 IST" name="beforeMethod" finished-at="2022-11-08T13:01:20 IST" duration-ms="7869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:20 IST" name="registerTest" data-provider="register" finished-at="2022-11-08T13:01:22 IST" duration-ms="1543" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[xyz1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[address ABC1XYZ1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[abc1@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[8765490322]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Female]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@e15b7e8]" started-at="2022-11-08T13:59:39 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-08T13:59:39 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+at utility.dataFetch.getTableArray(dataFetch.java:77)
+at Scratch.AutomationProject.TC01_Registration.registerData(TC01_Registration.java:100)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:22 IST" name="afterMethod" finished-at="2022-11-08T13:01:22 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:22 IST" name="beforeMethod" finished-at="2022-11-08T13:01:29 IST" duration-ms="6973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:29 IST" name="registerTest" data-provider="register" finished-at="2022-11-08T13:01:30 IST" duration-ms="1314" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[xyz2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[address ABC2XYZ2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[abc2@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[8727183288]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Other]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@306e95ec]" started-at="2022-11-08T13:01:30 IST" name="afterMethod" finished-at="2022-11-08T13:01:30 IST" duration-ms="199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
       </class> <!-- Scratch.AutomationProject.TC01_Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
