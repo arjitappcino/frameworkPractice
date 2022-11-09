@@ -3,7 +3,6 @@ package Scratch.AutomationProject;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -60,18 +59,15 @@ public class TC01_Registration {
 
 	@Test(dataProvider = "registerData")
 	public void registerTest(String testCaseName, String firstName, String lastName, String address, String email, String phone,
-			String gender, String[] interests) throws FileNotFoundException, InterruptedException {
+			String gender, String interests, String languages) throws FileNotFoundException, InterruptedException {
 		//PropertyConfigurator.configure("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\log4j.properties");
 		objRegister = new RegisterElements(driver);
-		objUtility = new utils(driver);
-		System.out.println(testCaseName);
 		objRegister.setFirstName(firstName);
 		objRegister.setLastName(lastName);
 		objRegister.setAddress(address);
 		objRegister.setEmail(email);
 		objRegister.setPhone(phone);
 		objRegister.setGender(gender);
-		System.out.println(interests);
 		objRegister.setInterests(interests);
 
 //		WebElement clrBtn = driver.findElement(By.name("password"));
@@ -79,7 +75,7 @@ public class TC01_Registration {
 //		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clrBtn);
 //		Thread.sleep(2000);
 //		String[] selectLanguages = { "Arabic", "Filipino" };
-//		objRegister.setLanguages(selectLanguages);
+		objRegister.setLanguages(languages);
 	}
 
 	@AfterMethod

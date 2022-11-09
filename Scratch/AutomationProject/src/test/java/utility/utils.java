@@ -6,14 +6,14 @@ import org.openqa.selenium.interactions.Actions;
 
 public class utils {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public utils(WebDriver driver) {
-		this.driver = driver;
+		utils.driver = driver;
 	}
-	public void scrollTillElementFound(WebElement element) {
+	public void scrollTillElementFound(WebElement element) throws InterruptedException {
 		Actions actions = new Actions(driver);
-		actions.moveToElement(element);
-		actions.perform();
+		actions.moveToElement(element).build().perform();;
+		Thread.sleep(2000);
 	}
 	
 }

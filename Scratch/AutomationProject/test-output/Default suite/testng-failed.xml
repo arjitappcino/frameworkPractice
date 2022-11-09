@@ -7,7 +7,7 @@
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="registerTest" invocation-numbers="2"/>
+          <include name="registerTest" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- Scratch.AutomationProject.TC01_Registration -->
     </classes>
