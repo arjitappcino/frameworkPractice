@@ -24,6 +24,8 @@ public class dataFetch {
 
 		int RowNum = worksheet.getPhysicalNumberOfRows();// count my number of Rows
 		int ColNum = Row.getLastCellNum(); // get last ColNum
+		System.out.println("Col last = "+ColNum);
+		System.out.println("rows = "+RowNum);
 
 		Object Data[][] = new Object[RowNum - 1][ColNum]; // pass my count data in array
 
