@@ -1,0 +1,22 @@
+Set First Name to abc
+Test Case -  TC_01
+Set First Name - abc
+Set Last Name - xyz
+Set address - address abc xyz
+Set email - abcxyz@gmail.com
+Set phone - 1234567890
+Set gender - Male
+Test Case -  TC_01
+Set First Name - abc
+Set Last Name - xyz
+Set address - address abc xyz
+Set email - abcxyz@gmail.com
+Set phone - 1234567890
+Set gender - Male
+ INFO main - 2022-11-09 13:32:50.357; - Scratch.AutomationProject.TC01_Registration [mainhread] - Test Case -  TC_01
+ INFO main - 2022-11-09 13:32:50.933; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set First Name - abc
+ INFO main - 2022-11-09 13:32:51.153; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set Last Name - xyz
+ INFO main - 2022-11-09 13:32:51.643; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set address - address abc xyz
+ INFO main - 2022-11-09 13:32:52.096; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abcxyz@gmail.com
+ INFO main - 2022-11-09 13:32:52.450; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 1234567890
+ INFO main - 2022-11-09 13:32:52.577; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Male

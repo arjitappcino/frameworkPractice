@@ -68,13 +68,19 @@ public class TC01_Registration {
 		objRegister = new RegisterElements(driver);
 		objUtility = new utils(driver);
 		System.out.println(testCaseName);
+		log.info("Test Case -  "+testCaseName);
 		objRegister.setFirstName(firstName);
-		log.info("Set First Name to "+firstName);
+		log.info("Set First Name - "+firstName);
 		objRegister.setLastName(lastName);
+		log.info("Set Last Name - "+lastName);
 		objRegister.setAddress(address);
+		log.info("Set address - "+address);
 		objRegister.setEmail(email);
+		log.info("Set email - "+email);
 		objRegister.setPhone(phone);
+		log.info("Set phone - "+phone);
 		objRegister.setGender(gender);
+		log.info("Set gender - "+gender);
 //		String[] selectInterests = { "Automation Testing", "Development" };
 //		objRegister.setInterests(selectInterests);
 
