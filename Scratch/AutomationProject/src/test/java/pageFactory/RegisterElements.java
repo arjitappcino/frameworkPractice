@@ -1,12 +1,10 @@
 package pageFactory;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,7 +12,8 @@ import utility.utils;
 
 public class RegisterElements {
 	WebDriver driver;
-	utils util;
+	utils objUtility;
+	Actions action;
 	//static Logger log = Logger.getLogger(RegisterElements.class);
 	
 	@FindBy(xpath="//input[@placeholder='First Name']")
@@ -32,12 +31,6 @@ public class RegisterElements {
 	@FindBy(name="phone")
 	WebElement phone;
 	
-	@FindAll({@FindBy(xpath = "//label[text()='Gender']/parent::div//input")})
-	public List<WebElement> gender;
-	
-	@FindAll({@FindBy(xpath = "//legend[contains(text(),'Interested')]/parent::fieldset//label//input")})
-	public List<WebElement> interests;
-	
 	@FindBy(xpath="//label[text()='Languages']/parent::div/div")
 	public WebElement languagesLabel;
 	
@@ -53,12 +46,13 @@ public class RegisterElements {
 	@FindBy(name="confirmPassword")
 	WebElement confirmPassword;
 	
-	
 
 	public RegisterElements(WebDriver driver){
 
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        objUtility = new utils(driver);
+        action = new Actions(driver);
     }
 	
 	public void setFirstName(String strFirstName){
@@ -82,11 +76,12 @@ public class RegisterElements {
 		phone.sendKeys(strPhone);
 	}
 	
-	public void setGender(String strGender){
+	public void setGender(String strGender) throws InterruptedException{
 		driver.findElement(By.xpath("//span[text()='" + strGender + "']/parent::label//input")).click();
 	}
 	
-	public void setInterests(String selectedInterest) {
+	public void setInterests(String selectedInterest) throws InterruptedException {
+		objUtility.scrollTillElementFound(phone);
 		String[] arrSelectedInterest = selectedInterest.split(",");
 		for(int i=0;i<arrSelectedInterest.length;i++) {
 			driver.findElement(By.xpath("//span[text()='" + arrSelectedInterest[i] + "']/parent::label//input")).click();
@@ -94,18 +89,17 @@ public class RegisterElements {
 	}
 	
 	public void setLanguages(String selectedLanguages) throws InterruptedException {
-
 		String[] arrSelectedLanguages = selectedLanguages.split(",");
 		languagesLabel.click();
 		for(int i = 0;i<arrSelectedLanguages.length;i++) {
-			WebElement select = driver.findElement(By.xpath("//span[text()='"+arrSelectedLanguages[i]+"']"));
-			select.click();
+			driver.findElement(By.xpath("//span[text()='"+arrSelectedLanguages[i]+"']")).click();
 		}
+		action.sendKeys(Keys.ESCAPE).perform();
 		Thread.sleep(2000);
-		confirmPassword.click();
 	}
 	
-	public void setSkill(String strSkill) {
+	public void setSkill(String strSkill) throws InterruptedException {
+		objUtility.scrollTillElementFound(languagesLabel);
 		skillsLabel.click();
 		driver.findElement(By.xpath("//li[text()='"+strSkill+"']")).click();
 		confirmPassword.click();

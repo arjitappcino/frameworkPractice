@@ -15,7 +15,6 @@ public class TestListener implements ITestListener {
 	WebDriver driver = null;
 	String filePath = "D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\results\\screenshots";
 	
-	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("***** Error " + result.getName() + " test has failed *****");
 		String methodName = result.getName().toString().trim();
@@ -41,7 +40,6 @@ public class TestListener implements ITestListener {
 	public void onTestStart(ITestResult result) {
 	}
 	
-	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("***** " + result.getName() + " test has passed *****");
 		String methodName = result.getName().toString().trim();

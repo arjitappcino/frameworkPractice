@@ -1,5 +1,6 @@
 package utility;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -11,9 +12,8 @@ public class utils {
 		utils.driver = driver;
 	}
 	public void scrollTillElementFound(WebElement element) throws InterruptedException {
-		Actions actions = new Actions(driver);
-		actions.moveToElement(element).build().perform();;
-		Thread.sleep(2000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+		Thread.sleep(3000);
 	}
 	
 }

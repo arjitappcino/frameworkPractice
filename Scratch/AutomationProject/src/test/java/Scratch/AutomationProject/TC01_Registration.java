@@ -6,8 +6,9 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -23,21 +24,22 @@ public class TC01_Registration {
 	WebDriver driver;
 	RegisterElements objRegister;
 	utils objUtility;
-	String driverpath = "C:\\driver\\chromedriver.exe";
-	static String file_location = "D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\user.xlsx";
+	String driverpath = "C:\\driver\\msedgedriver.exe";
+	static String file_location = "D:\\github\\AppcinoPractice\\testing\\frameworkPractice\\Scratch\\AutomationProject\\user.xlsx";
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet worksheet;
 	public static DataFormatter formatter = new DataFormatter();
 	// public static String file_location = System.getProperty("user.dir") +
 	// "/Akeneo_product";
 	static String SheetName = "Sheet1";
+	public String mainwindow;
 	
 
 	@BeforeMethod
 	public void beforeMethod() throws IOException {
 
-		System.setProperty("webdriver.chrome.driver", driverpath);
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.edge.driver", driverpath);
+		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://dev.automationtesting.in/form");
 	}
@@ -69,7 +71,6 @@ public class TC01_Registration {
 		objRegister.setPhone(phone);
 		objRegister.setGender(gender);
 		objRegister.setInterests(interests);
-
 //		WebElement clrBtn = driver.findElement(By.name("password"));
 //		// objUtility.scrollTillElementFound(conBtn);
 //		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clrBtn);
