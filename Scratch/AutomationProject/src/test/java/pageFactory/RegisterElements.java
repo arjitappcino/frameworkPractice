@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RegisterElements {
 	WebDriver driver;
+	//static Logger log = Logger.getLogger(RegisterElements.class);
 	
 	@FindBy(xpath="//input[@placeholder='First Name']")
 	WebElement firstName;
@@ -58,6 +59,7 @@ public class RegisterElements {
 	
 	public void setFirstName(String strFirstName){
 		firstName.sendKeys(strFirstName);
+		
 	}
 	
 	public void setLastName(String strLastName){
@@ -108,6 +110,7 @@ public class RegisterElements {
 					break;
 			}
 		}
+		System.out.println("Went inside interests");
 	}
 	
 	public void setLanguages(String[] selectedLanguages) throws InterruptedException {

@@ -20,3 +20,38 @@ Set gender - Male
  INFO main - 2022-11-09 13:32:52.096; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abcxyz@gmail.com
  INFO main - 2022-11-09 13:32:52.450; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 1234567890
  INFO main - 2022-11-09 13:32:52.577; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Male
+ INFO main - 2022-11-09 15:57:16; - Scratch.AutomationProject.TC01_Registration [mainhread] - Test Case -  TC_01
+ INFO main - 2022-11-09 15:57:16; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set First Name - abc
+ INFO main - 2022-11-09 15:57:16; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set Last Name - xyz
+ INFO main - 2022-11-09 15:57:17; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set address - address abc xyz
+ INFO main - 2022-11-09 15:57:17; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abcxyz@gmail.com
+ INFO main - 2022-11-09 15:57:17; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 1234567890
+ INFO main - 2022-11-09 15:57:17; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Male
+ INFO main - 2022-11-09 15:58:09; - Scratch.AutomationProject.TC01_Registration [mainhread] - Test Case -  TC_01
+ INFO main - 2022-11-09 15:58:10; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set First Name - abc
+ INFO main - 2022-11-09 15:58:10; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set Last Name - xyz
+ INFO main - 2022-11-09 15:58:11; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set address - address abc xyz
+ INFO main - 2022-11-09 15:58:12; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abcxyz@gmail.com
+ INFO main - 2022-11-09 15:58:12; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 1234567890
+ INFO main - 2022-11-09 15:58:12; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Male
+ INFO main - 2022-11-09 15:58:45; - Scratch.AutomationProject.TC01_Registration [mainhread] - Test Case -  TC_01
+ INFO main - 2022-11-09 15:58:45; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set First Name - abc
+ INFO main - 2022-11-09 15:58:45; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set Last Name - xyz
+ INFO main - 2022-11-09 15:58:46; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set address - address abc xyz
+ INFO main - 2022-11-09 15:58:46; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abcxyz@gmail.com
+ INFO main - 2022-11-09 15:58:47; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 1234567890
+ INFO main - 2022-11-09 15:58:47; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Male
+ INFO main - 2022-11-09 15:58:51; - Scratch.AutomationProject.TC01_Registration [mainhread] - Test Case -  TC_02
+ INFO main - 2022-11-09 15:58:51; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set First Name - abc1
+ INFO main - 2022-11-09 15:58:52; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set Last Name - xyz1
+ INFO main - 2022-11-09 15:58:52; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set address - address abc1 xyz1
+ INFO main - 2022-11-09 15:58:53; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abc1xyz1@gmail.com
+ INFO main - 2022-11-09 15:58:53; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 9087654321
+ INFO main - 2022-11-09 15:58:53; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Female
+ INFO main - 2022-11-09 15:58:57; - Scratch.AutomationProject.TC01_Registration [mainhread] - Test Case -  TC_03
+ INFO main - 2022-11-09 15:58:57; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set First Name - abc2
+ INFO main - 2022-11-09 15:58:58; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set Last Name - xyz2
+ INFO main - 2022-11-09 15:58:58; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set address - address abc2 xyz2
+ INFO main - 2022-11-09 15:58:59; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set email - abc2xyz2@gmail.com
+ INFO main - 2022-11-09 15:58:59; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set phone - 9876787623
+ INFO main - 2022-11-09 15:58:59; - Scratch.AutomationProject.TC01_Registration [mainhread] - Set gender - Other

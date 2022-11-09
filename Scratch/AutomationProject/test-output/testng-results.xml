@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T12:08:12 IST" name="Default suite" finished-at="2022-11-09T12:08:32 IST" duration-ms="19542">
+  <suite started-at="2022-11-09T17:43:55 IST" name="Suite" finished-at="2022-11-09T17:44:15 IST" duration-ms="20056">
     <groups>
     </groups>
-    <test started-at="2022-11-09T12:08:12 IST" name="Default test" finished-at="2022-11-09T12:08:32 IST" duration-ms="19542">
+    <test started-at="2022-11-09T17:43:55 IST" name="Test" finished-at="2022-11-09T17:44:15 IST" duration-ms="20056">
       <class name="Scratch.AutomationProject.TC01_Registration">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:13 IST" name="beforeMethod" finished-at="2022-11-09T12:08:18 IST" duration-ms="5540" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:43:56 IST" name="beforeMethod" finished-at="2022-11-09T17:44:00 IST" duration-ms="4221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:18 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T12:08:20 IST" duration-ms="1840" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:00 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T17:44:02 IST" duration-ms="1960" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,19 +48,24 @@
                 <![CDATA[Male]]>
               </value>
             </param>
+            <param index="7">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1a3e8e24]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:20 IST" name="afterMethod" finished-at="2022-11-09T12:08:20 IST" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:02 IST" name="afterMethod" finished-at="2022-11-09T17:44:02 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:20 IST" name="beforeMethod" finished-at="2022-11-09T12:08:24 IST" duration-ms="3752" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:02 IST" name="beforeMethod" finished-at="2022-11-09T17:44:06 IST" duration-ms="3979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:24 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T12:08:26 IST" duration-ms="1923" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:06 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T17:44:08 IST" duration-ms="2227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,19 +102,24 @@
                 <![CDATA[Female]]>
               </value>
             </param>
+            <param index="7">
+              <value>
+                <![CDATA[[Ljava.lang.String;@72eb6200]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:26 IST" name="afterMethod" finished-at="2022-11-09T12:08:26 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:08 IST" name="afterMethod" finished-at="2022-11-09T17:44:08 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:26 IST" name="beforeMethod" finished-at="2022-11-09T12:08:30 IST" duration-ms="3483" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:08 IST" name="beforeMethod" finished-at="2022-11-09T17:44:13 IST" duration-ms="4670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:30 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T12:08:32 IST" duration-ms="1850" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:13 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T17:44:15 IST" duration-ms="1899" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,15 +156,20 @@
                 <![CDATA[Other]]>
               </value>
             </param>
+            <param index="7">
+              <value>
+                <![CDATA[[Ljava.lang.String;@60df7989]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6f0b0a5e]" started-at="2022-11-09T12:08:32 IST" name="afterMethod" finished-at="2022-11-09T12:08:32 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-09T17:44:15 IST" name="afterMethod" finished-at="2022-11-09T17:44:15 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Scratch.AutomationProject.TC01_Registration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

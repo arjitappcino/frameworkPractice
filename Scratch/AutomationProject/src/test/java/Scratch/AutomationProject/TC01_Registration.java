@@ -3,7 +3,6 @@ package Scratch.AutomationProject;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -13,14 +12,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageFactory.RegisterElements;
 import utility.dataFetch;
 import utility.utils;
 
-@Listeners(utility.TestListener.class)
+//@Listeners(utility.TestListener.class)
 public class TC01_Registration {
 
 	WebDriver driver;
@@ -34,7 +32,6 @@ public class TC01_Registration {
 	// public static String file_location = System.getProperty("user.dir") +
 	// "/Akeneo_product";
 	static String SheetName = "Sheet1";
-	static Logger log = Logger.getLogger(TC01_Registration.class);
 	
 
 	@BeforeMethod
@@ -63,26 +60,19 @@ public class TC01_Registration {
 
 	@Test(dataProvider = "registerData")
 	public void registerTest(String testCaseName, String firstName, String lastName, String address, String email, String phone,
-			String gender) throws FileNotFoundException, InterruptedException {
-		PropertyConfigurator.configure("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\log4j.properties");
+			String gender, String[] interests) throws FileNotFoundException, InterruptedException {
+		//PropertyConfigurator.configure("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\log4j.properties");
 		objRegister = new RegisterElements(driver);
 		objUtility = new utils(driver);
 		System.out.println(testCaseName);
-		log.info("Test Case -  "+testCaseName);
 		objRegister.setFirstName(firstName);
-		log.info("Set First Name - "+firstName);
 		objRegister.setLastName(lastName);
-		log.info("Set Last Name - "+lastName);
 		objRegister.setAddress(address);
-		log.info("Set address - "+address);
 		objRegister.setEmail(email);
-		log.info("Set email - "+email);
 		objRegister.setPhone(phone);
-		log.info("Set phone - "+phone);
 		objRegister.setGender(gender);
-		log.info("Set gender - "+gender);
-//		String[] selectInterests = { "Automation Testing", "Development" };
-//		objRegister.setInterests(selectInterests);
+		System.out.println(interests);
+		objRegister.setInterests(interests);
 
 //		WebElement clrBtn = driver.findElement(By.name("password"));
 //		// objUtility.scrollTillElementFound(conBtn);
