@@ -24,8 +24,8 @@ public class TC01_Registration {
 	WebDriver driver;
 	RegisterElements objRegister;
 	utils objUtility;
-	String driverpath = "C:\\driver\\msedgedriver.exe";
-	static String file_location = "D:\\github\\AppcinoPractice\\testing\\frameworkPractice\\Scratch\\AutomationProject\\user.xlsx";
+	String driverpath = ".\\driver\\msedgedriver.exe";
+	static String file_location = ".\\user.xlsx";
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet worksheet;
 	public static DataFormatter formatter = new DataFormatter();

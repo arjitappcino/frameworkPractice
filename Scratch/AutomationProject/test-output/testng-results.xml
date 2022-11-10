@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
+<testng-results ignored="0" total="3" passed="1" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T23:43:31 IST" name="Default suite" finished-at="2022-11-09T23:43:48 IST" duration-ms="16828">
+  <suite started-at="2022-11-10T11:12:41 IST" name="Suite" finished-at="2022-11-10T11:13:01 IST" duration-ms="19205">
     <groups>
     </groups>
-    <test started-at="2022-11-09T23:43:31 IST" name="Default test" finished-at="2022-11-09T23:43:48 IST" duration-ms="16828">
+    <test started-at="2022-11-10T11:12:41 IST" name="Test" finished-at="2022-11-10T11:13:01 IST" duration-ms="19205">
       <class name="Scratch.AutomationProject.TC01_Registration">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:31 IST" name="beforeMethod" finished-at="2022-11-09T23:43:37 IST" duration-ms="6162" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:12:42 IST" name="beforeMethod" finished-at="2022-11-10T11:12:48 IST" duration-ms="5504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:37 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T23:43:44 IST" duration-ms="6956" status="FAIL">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:12:48 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-10T11:12:55 IST" duration-ms="7847" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,28 +59,36 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:12:55 IST" name="afterMethod" finished-at="2022-11-10T11:12:56 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:12:56 IST" name="beforeMethod" finished-at="2022-11-10T11:13:01 IST" duration-ms="5065" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Skills']"}
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
   (Session info: MicrosoftEdge=107.0.1418.35)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6cc39e2622b92d133cb15ce448780451, findElement {using=xpath, value=//label[text()='Skills']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:56919}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56919/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6cc39e2622b92d133cb15ce448780451]]>
+Command: [3defe6e95543563deb3bc106fe402dee, get {url=https://dev.automationtesting.in/form}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:64343}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\Arjit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64343/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3defe6e95543563deb3bc106fe402dee]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Skills']"}
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
   (Session info: MicrosoftEdge=107.0.1418.35)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6cc39e2622b92d133cb15ce448780451, findElement {using=xpath, value=//label[text()='Skills']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:56919}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56919/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6cc39e2622b92d133cb15ce448780451
+Command: [3defe6e95543563deb3bc106fe402dee, get {url=https://dev.automationtesting.in/form}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:64343}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\Arjit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64343/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3defe6e95543563deb3bc106fe402dee
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -93,31 +101,18 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
-at utility.utils.scrollTillElementFound(utils.java:15)
-at pageFactory.RegisterElements.setLanguages(RegisterElements.java:99)
-at Scratch.AutomationProject.TC01_Registration.registerTest(TC01_Registration.java:79)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at Scratch.AutomationProject.TC01_Registration.beforeMethod(TC01_Registration.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -142,19 +137,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:44 IST" name="afterMethod" finished-at="2022-11-09T23:43:45 IST" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:45 IST" name="beforeMethod" finished-at="2022-11-09T23:43:48 IST" duration-ms="3066" status="PASS">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:48 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T23:43:48 IST" duration-ms="8" status="FAIL">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:13:01 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-10T11:13:01 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -202,28 +189,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
   (Session info: MicrosoftEdge=107.0.1418.35)
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [592dd24a3cbe06cce2367230367e8e35, findElement {using=xpath, value=//input[@placeholder='First Name']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:57037}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57037/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 592dd24a3cbe06cce2367230367e8e35]]>
+Command: [3defe6e95543563deb3bc106fe402dee, get {url=https://dev.automationtesting.in/form}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:64343}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\Arjit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64343/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3defe6e95543563deb3bc106fe402dee]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
   (Session info: MicrosoftEdge=107.0.1418.35)
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [592dd24a3cbe06cce2367230367e8e35, findElement {using=xpath, value=//input[@placeholder='First Name']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:57037}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57037/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 592dd24a3cbe06cce2367230367e8e35
+Command: [3defe6e95543563deb3bc106fe402dee, get {url=https://dev.automationtesting.in/form}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:64343}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\Arjit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64343/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3defe6e95543563deb3bc106fe402dee
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -236,88 +223,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-at pageFactory.RegisterElements.setFirstName(RegisterElements.java:59)
-at Scratch.AutomationProject.TC01_Registration.registerTest(TC01_Registration.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:48 IST" name="afterMethod" finished-at="2022-11-09T23:43:48 IST" duration-ms="25" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=107.0.1418.35)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [592dd24a3cbe06cce2367230367e8e35, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:57037}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57037/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 592dd24a3cbe06cce2367230367e8e35]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=107.0.1418.35)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [592dd24a3cbe06cce2367230367e8e35, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:57037}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57037/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 592dd24a3cbe06cce2367230367e8e35
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-at Scratch.AutomationProject.TC01_Registration.afterMethod(TC01_Registration.java:84)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at Scratch.AutomationProject.TC01_Registration.beforeMethod(TC01_Registration.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -327,8 +234,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(Met
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -353,15 +259,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668058981144" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:48 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668017628214" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668058981145" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:48 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-09T23:43:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:13:01 IST" name="registerTest" data-provider="registerData" finished-at="2022-11-10T11:13:01 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -409,28 +319,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
   (Session info: MicrosoftEdge=107.0.1418.35)
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [592dd24a3cbe06cce2367230367e8e35, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:57037}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57037/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 592dd24a3cbe06cce2367230367e8e35]]>
+Command: [3defe6e95543563deb3bc106fe402dee, get {url=https://dev.automationtesting.in/form}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:64343}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\Arjit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64343/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3defe6e95543563deb3bc106fe402dee]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
   (Session info: MicrosoftEdge=107.0.1418.35)
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [592dd24a3cbe06cce2367230367e8e35, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:57037}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\yadav\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57037/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 592dd24a3cbe06cce2367230367e8e35
+Command: [3defe6e95543563deb3bc106fe402dee, get {url=https://dev.automationtesting.in/form}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, ms:edgeOptions: {debuggerAddress: localhost:64343}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\Arjit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64343/devtoo..., se:cdpVersion: 107.0.1418.35, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3defe6e95543563deb3bc106fe402dee
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -443,10 +353,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-at Scratch.AutomationProject.TC01_Registration.afterMethod(TC01_Registration.java:84)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at Scratch.AutomationProject.TC01_Registration.beforeMethod(TC01_Registration.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -456,8 +364,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(Met
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -482,15 +389,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@71075444]" started-at="2022-11-09T23:43:48 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668017628219" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scratch.AutomationProject.TC01_Registration@6c4906d3]" started-at="2022-11-10T11:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668058981154" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Scratch.AutomationProject.TC01_Registration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
