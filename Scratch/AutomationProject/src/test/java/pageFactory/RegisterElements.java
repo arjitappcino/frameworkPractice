@@ -34,10 +34,10 @@ public class RegisterElements {
 	@FindBy(xpath="//label[text()='Languages']/parent::div/div")
 	public WebElement languagesLabel;
 	
-	@FindBy(xpath="//label[text()='Skills']")
+	@FindBy(xpath="//label[text()='Skill']/following::div/div")
 	WebElement skillsLabel;
 	
-	@FindBy(xpath="//label[text()='Country']")
+	@FindBy(xpath="//div[@id='country-select']")
 	WebElement countryLabel;
 	
 	@FindBy(xpath="//input[@name='password']")
@@ -46,6 +46,8 @@ public class RegisterElements {
 	@FindBy(name="confirmPassword")
 	WebElement confirmPassword;
 	
+	@FindBy(xpath="//button[contains(text(),'Submit')]")
+	WebElement submitBtn;
 
 	public RegisterElements(WebDriver driver){
 
@@ -57,7 +59,6 @@ public class RegisterElements {
 	
 	public void setFirstName(String strFirstName){
 		firstName.sendKeys(strFirstName);
-		
 	}
 	
 	public void setLastName(String strLastName){
@@ -99,10 +100,28 @@ public class RegisterElements {
 	}
 	
 	public void setSkill(String strSkill) throws InterruptedException {
-		objUtility.scrollTillElementFound(languagesLabel);
+		//objUtility.scrollTillElementFound(languagesLabel);
 		skillsLabel.click();
-		driver.findElement(By.xpath("//li[text()='"+strSkill+"']")).click();
-		confirmPassword.click();
+		driver.findElement(By.xpath("//li[@data-value='"+strSkill+"']")).click();
+		Thread.sleep(1000);
+	}
+	
+	public void setCountry(String strCountry) {
+		countryLabel.click();
+		driver.findElement(By.xpath("//li[@data-value='"+strCountry+"']")).click();
+	}
+	
+	public void setPassword(String strPassword) {
+		password.sendKeys(strPassword);
+	}
+	
+	public void setConfirmPassword(String strConfirmPassword) {
+		confirmPassword.sendKeys(strConfirmPassword);
+	}
+	
+	public void clickSubmitBtn() throws InterruptedException {
+		submitBtn.click();
+		Thread.sleep(2000);
 	}
 	
 }

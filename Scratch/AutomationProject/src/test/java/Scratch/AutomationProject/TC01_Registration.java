@@ -6,7 +6,6 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
@@ -44,25 +43,9 @@ public class TC01_Registration {
 		driver.get("https://dev.automationtesting.in/form");
 	}
 
-//	  public static Object[][] registerData() {
-//
-//	        // The number of times data is repeated, test will be executed the same no. of times
-//
-//	        // Here it will execute two times
-//
-//	        return new Object[][] {
-//	        	{ "abc", "xyz", "address ABCXYZ", "abc@gmail.com", "9876543210", "Male" },
-//	        	{ "abc1", "xyz1", "address ABC1XYZ1", "abc1@gmail.com", "8765490322", "Female" },
-//	        	{ "abc2", "xyz2", "address ABC2XYZ2", "abc2@gmail.com", "8727183288", "Other" }
-//	        										
-//	        };
-//
-//	  }
-
 	@Test(dataProvider = "registerData")
 	public void registerTest(String testCaseName, String firstName, String lastName, String address, String email, String phone,
-			String gender, String interests, String languages) throws FileNotFoundException, InterruptedException {
-		//PropertyConfigurator.configure("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\log4j.properties");
+			String gender, String interests, String languages,String skill,String country, String password) throws FileNotFoundException, InterruptedException {
 		objRegister = new RegisterElements(driver);
 		objRegister.setFirstName(firstName);
 		objRegister.setLastName(lastName);
@@ -71,12 +54,12 @@ public class TC01_Registration {
 		objRegister.setPhone(phone);
 		objRegister.setGender(gender);
 		objRegister.setInterests(interests);
-//		WebElement clrBtn = driver.findElement(By.name("password"));
-//		// objUtility.scrollTillElementFound(conBtn);
-//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clrBtn);
-//		Thread.sleep(2000);
-//		String[] selectLanguages = { "Arabic", "Filipino" };
 		objRegister.setLanguages(languages);
+		objRegister.setSkill(skill);
+		objRegister.setCountry(country);
+		objRegister.setPassword(password);
+		objRegister.setConfirmPassword(password);
+		objRegister.clickSubmitBtn();
 	}
 
 	@AfterMethod
@@ -86,7 +69,7 @@ public class TC01_Registration {
 
 	@DataProvider
 	public Object[][] registerData() throws Exception {
-
+		
 		Object[][] testObjArray = dataFetch.readExcel(file_location, SheetName);
 
 		return (testObjArray);
