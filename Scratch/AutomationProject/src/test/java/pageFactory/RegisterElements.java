@@ -48,6 +48,9 @@ public class RegisterElements {
 	
 	@FindBy(xpath="//button[contains(text(),'Submit')]")
 	WebElement submitBtn;
+	
+	@FindBy(xpath="//input[@type='file']")
+	WebElement uploadImg;
 
 	public RegisterElements(WebDriver driver){
 
@@ -122,6 +125,10 @@ public class RegisterElements {
 	public void clickSubmitBtn() throws InterruptedException {
 		submitBtn.click();
 		Thread.sleep(2000);
+	}
+	
+	public void uploadImage() {
+		uploadImg.sendKeys(".\\image.png");
 	}
 	
 }
