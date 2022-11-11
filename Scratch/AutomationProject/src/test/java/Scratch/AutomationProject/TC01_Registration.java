@@ -6,8 +6,12 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -56,13 +60,15 @@ public class TC01_Registration {
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://dev.automationtesting.in/form");
+		
+		
 
 	}
 
 	@Test(dataProvider = "registerData")
 	public void registerTest(String testCaseName, String firstName, String lastName, String address, String email,
 			String phone, String gender, String interests, String languages, String skill, String country,
-			String password) throws FileNotFoundException, InterruptedException {
+			String password) throws FileNotFoundException, InterruptedException, FindFailed {
 
 		objRegister = new RegisterElements(driver);
 		
@@ -78,8 +84,21 @@ public class TC01_Registration {
 		objRegister.setAddress(address);
 		test.pass("Address set to "+address);
 		
-		objRegister.uploadImage();
-		test.pass("Image set");
+//		objRegister.uploadImage();
+//		test.pass("Image set");
+		
+//		objRegister.uploadImageSikuli();
+		
+//		Screen s = new Screen();
+//		Pattern fileInputTextBox = new Pattern("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\FileTextBox.png");
+//		Pattern openButton = new Pattern("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\OpenButton.png");
+//		
+//		driver.findElement(By.xpath("//div//input[@type='file']")).click();
+//		
+//		s.type(fileInputTextBox, "D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\user.xlsx");
+//		Thread.sleep(2000);
+//		s.click(openButton);
+		
 		
 		objRegister.setEmail(email);
 		test.pass("Email set");

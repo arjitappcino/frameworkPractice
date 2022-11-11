@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 
 import utility.utils;
 
@@ -127,8 +130,23 @@ public class RegisterElements {
 		Thread.sleep(2000);
 	}
 	
-	public void uploadImage() {
-		uploadImg.sendKeys(".\\image.png");
+//	public void uploadImage() throws InterruptedException {
+//		uploadImg.sendKeys("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\image.png");
+//		Thread.sleep(2000);
+//	}
+	
+	public void uploadImageSikuli() throws FindFailed, InterruptedException {
+		Screen s = new Screen();
+		Pattern fileInputTextBox = new Pattern("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\FileTextBox.png");
+		Pattern openButton = new Pattern("D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\OpenButton.png");
+		
+		uploadImg.click();
+		
+		s.wait(fileInputTextBox, 20);
+		s.type(fileInputTextBox, "D:\\GIT Automation Practice\\frameworkPractice\\Scratch\\AutomationProject\\user.xlsx");
+		Thread.sleep(2000);
+		s.click(openButton);
+		
 	}
 	
 }
